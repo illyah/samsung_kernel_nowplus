@@ -61,7 +61,7 @@
 
 #include "mux.h"
 #include "mmc-twl4030.h"
-#include "sdram-nowplus.h"
+#include "sdram-qimonda-hyb18m512160af-6.h"
 #include "omap3-opp.h"
 #include "pm.h"
 
@@ -2592,7 +2592,7 @@ static void __init nowplus_init_irq(void)
 	omap3_pm_init_vc(&omap3_setuptime_table);
 	omap3_pm_init_cpuidle(omap3_cpuidle_params_table);
 
-	omap2_init_common_hw(nowplus_sdrc_params, nowplus_sdrc_params,omap3_mpu_rate_table,
+	omap2_init_common_hw(hyb18m512160af6_sdrc_params, hyb18m512160af6_sdrc_params,omap3_mpu_rate_table,
 				 omap3_dsp_rate_table, omap3_l3_rate_table);
 }
 
